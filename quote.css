@@ -1,0 +1,46 @@
+.quote-open{overflow:hidden}
+.quote-modal{padding:0;border:1px solid #77808d;border-radius:18px;width:min(920px,calc(100% - 32px));max-width:none;max-height:calc(100dvh - 32px);color:#515151;background:#e7e7e7;box-shadow:0 24px 80px #0006;overflow:auto;overscroll-behavior:contain}
+.quote-modal::backdrop{background:#0009}
+.quote-layout{display:grid;grid-template-columns:32% 68%;min-height:710px}
+.quote-sidebar{padding:30px 28px;background:#101828;color:#e8ebf1;border-radius:17px 0 0 17px}
+.quote-sidebar h2{font:700 23px/30px Inter,Arial,sans-serif;letter-spacing:-.3px;color:#fff;margin:0 0 12px}
+.quote-description{font-size:14px;line-height:21px;color:#98a2b3;margin:0 0 28px}
+.quote-contacts{display:grid;gap:25px}
+.quote-contact{display:flex;align-items:center;gap:12px;min-width:0}
+.quote-contact-icon{display:grid;place-items:center;background:#273244;width:38px;height:38px;flex-shrink:0;border-radius:50%;color:#e22f3d}
+.quote-contact-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.quote-contact-label{display:block;font-size:11px;line-height:16px;font-weight:700;color:#8996ab;margin-bottom:4px}
+.quote-contact-value{display:block;font-size:14px;line-height:20px;font-weight:700;color:#e6eaf1;overflow-wrap:anywhere}
+.quote-contact a.quote-contact-value:hover{color:#fff}
+.quote-contact a[href^="mailto:"]{font-size:13px;letter-spacing:-.15px}
+.quote-main{padding:30px;position:relative;min-width:0}
+.quote-close{position:absolute;top:4px;right:8px;display:grid;place-items:center;width:30px;height:30px;padding:0;background:transparent;border:0;border-radius:8px;font-size:27px;line-height:1;font-weight:400;color:#111;z-index:1}
+.quote-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 18px;margin:0}
+.quote-field{display:flex;flex-direction:column;min-width:0;gap:5px}
+.quote-field-full{grid-column:1/-1}
+.quote-field label{font-size:14px;line-height:19px;font-weight:500;color:#555}
+.quote-field input,.quote-field select{width:100%;min-width:0;height:42px;margin:0;padding:10px 12px;border:1px solid #dedede;border-radius:8px;background:#fff;color:#555;font:400 15px/21px Inter,Arial,sans-serif;box-shadow:none}
+.quote-field input::placeholder{color:#8c8c8c;opacity:1}
+.quote-field select{padding-right:22px}
+.quote-field input:focus,.quote-field select:focus{border-color:var(--wine);outline:2px solid #5d063315;outline-offset:1px}
+.quote-field input[type=number]{appearance:textfield;-moz-appearance:textfield}
+.quote-field input::-webkit-inner-spin-button,.quote-field input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.quote-submit{justify-self:start;grid-column:1/-1;background:var(--wine);color:#fff;border:0;border-radius:8px;padding:12px 20px;min-height:44px;font-size:14px;line-height:20px;font-weight:700;margin:0}
+.quote-submit:hover{background:#760940}
+.quote-status{grid-column:1/-1;font-size:14px;line-height:1.6;margin:0;color:#454545}
+.quote-status a{display:inline-block;color:var(--wine);text-decoration:underline;margin-top:5px}
+@media(max-width:699px){
+  .quote-modal{width:calc(100% - 20px);max-height:calc(100dvh - 20px)}
+  .quote-layout{grid-template-columns:1fr;min-height:0}
+  .quote-sidebar{padding:25px 22px;border-radius:17px 17px 0 0}
+  .quote-sidebar h2{padding-right:24px}
+  .quote-description{max-width:450px;line-height:1.5;font-size:14px;margin-bottom:20px}
+  .quote-contacts{gap:12px}
+  .quote-contact-icon{width:34px;height:34px}
+  .quote-main{position:static;padding:25px 22px}
+  .quote-close{top:5px;right:7px;color:#fff}
+  .quote-form{gap:19px 12px}
+  .quote-field input,.quote-field select{height:44px;font-size:16px;line-height:22px;padding:10px}
+  .quote-field label{font-size:14px;line-height:19px}
+}
+@media(max-width:359px){.quote-field{grid-column:1/-1}}

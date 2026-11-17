@@ -1,0 +1,28 @@
+/* Chân trang dùng chung; nạp sau CSS riêng của từng trang. */
+.footer .footer-grid{grid-template-columns:1.15fr 1.15fr 1fr 1.3fr;gap:36px}
+.footer .footer-grid>div{min-width:0}
+.footer .footer-grid h2{font-size:16px;line-height:1.5;font-weight:700;letter-spacing:.3px;padding:0 0 12px;margin:0 0 22px;color:#fff;border-bottom:1px solid #ffffff30;width:100%;max-width:100%}
+.footer .footer-grid>div>a:not(.footer-about a),.footer .footer-contact p{font-size:16px;line-height:1.65;margin-bottom:12px}
+.footer .footer-links-button{display:block;margin:0 0 12px;padding:0;border:0;background:transparent;color:inherit;font-size:16px;line-height:1.65;text-align:left}
+.footer .footer-links-button:hover{color:var(--gold)}
+.footer .footer-about p{font-size:15px;line-height:1.8;max-width:290px;margin-bottom:22px}
+.footer .footer-about .footer-company-name{font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:10px}
+.footer .footer-about .footer-address{font-weight:400;font-style:normal;margin-bottom:22px}
+.footer-socials{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.footer .footer-social-button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 40px;width:40px;height:40px;margin:0;padding:0;border:0;border-radius:50%;background:#ffffff30;color:#fff;line-height:1;text-decoration:none}
+.footer-social-button svg{display:block;width:20px;height:20px}
+.footer .footer-social-button:hover{background:var(--gold);color:var(--wine-dark)}
+.footer .footer-contact p{align-items:flex-start}
+.footer .footer-contact p>span{margin-top:8px;flex-shrink:0}
+.footer .footer-contact p>.status-dot{margin-top:11px}
+@media(max-width:1000px){
+  .footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 32px}
+  .footer .footer-about,.footer .footer-contact{grid-column:auto}
+}
+@media(max-width:600px){
+  .footer .footer-grid{grid-template-columns:1fr;gap:30px}
+  .footer .footer-grid h2{font-size:16px;margin-bottom:18px}
+  .footer .footer-grid>div>a:not(.footer-about a),.footer .footer-contact p,.footer .footer-links-button{font-size:15px}
+  .footer .footer-about p{max-width:100%;font-size:15px}
+  .footer .footer-contact h2{max-width:100%}
+}

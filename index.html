@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vinh Phát — dịch vụ vận chuyển quốc tế, gom container, mua hộ hàng Trung Quốc và ủy thác xuất nhập khẩu.">
+  <meta name="theme-color" content="#5d0633">
+  <title>Trang chủ</title>
+  <link rel="icon" href="assets/LOGO VINH PHÁT.png" type="image/png">
+  <link rel="preload" href="assets/fonts/inter-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="quote.css">
+  <link rel="stylesheet" href="footer.css">
+  <!-- Sửa nội dung tại data.js; content.js đưa dữ liệu vào giao diện. -->
+  <script src="data.js" defer></script>
+  <script src="footer-socials.js" defer></script>
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="quote-data.js" defer></script>
+  <script src="quote.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#noi-dung">Bỏ qua menu, đến nội dung</a>
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-contact">
+        <a href="tel:0846901111">☎ <span>Hotline: 084.690.1111</span></a>
+        <a href="mailto:invinhphat6886@gmail.com">✉ <span>invinhphat6886@gmail.com</span></a>
+        <span class="support"><span class="status-dot"></span> Hỗ trợ 24/7</span>
+      </div>
+    </div>
+  </div>
+  <header class="header" id="dau-trang">
+    <div class="container header-inner">
+      <a class="brand" href="#dau-trang" aria-label="Vinh Phát - Trang chủ">
+        <img src="assets/LOGO VINH PHÁT.png" width="205" height="57" alt="Vinh Phát Design & Print">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="main-nav" class="nav" aria-label="Điều hướng chính"><a href="#trang-chu" class="active" aria-current="page">Trang chủ</a><a href="gioi-thieu.html">Giới thiệu</a><a href="dich-vu.html">Sản phẩm</a><a href="bang-gia.html">Bảng giá</a><a href="lien-he-va-bao-gia.html">Liên hệ và Báo giá</a><a href="chinh-sach-quy-dinh.html">Chính sách &amp; Quy định</a><a role="link" aria-disabled="true">Tin tức</a></nav>
+    </div>
+  </header>
+
+  <main id="noi-dung">
+    <section class="hero" id="trang-chu" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><img src="assets/icons/carton.svg" width="16" height="16" alt=""> GIẢI PHÁP VẬN CHUYỂN TOÀN DIỆN</p>
+            <h1 id="hero-title"><span>Sản phẩm chất lượng</span><br>Phục vụ tận tâm.</h1>
+            <p class="hero-description">Đồng hành cùng doanh nghiệp trên mọi hành trình xuất nhập khẩu. Vinh Phát kết nối vận chuyển quốc tế, hải quan và kho bãi trong một giải pháp trọn gói.</p>
+            <div class="hero-actions">
+              <a class="button button-wine" href="dich-vu.html">Khám phá dịch vụ <span aria-hidden="true">→</span></a>
+              <a class="button button-white" href="#bao-gia" data-quote-open aria-haspopup="dialog" aria-controls="quote-modal">Nhận báo giá ngay <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="trust-tags"><span><span aria-hidden="true"><img src="assets/icons/shield.svg" width="18" height="18" alt=""></span> Bảo Hiểm 100%</span><span><span aria-hidden="true"><img src="assets/icons/carton.svg" width="18" height="18" alt=""></span> AI Optimized</span></div>
+          </div>
+          <div class="hero-visual">
+            <div class="slider" role="region" aria-roledescription="băng chuyền" aria-label="Hình ảnh nhà xưởng Vinh Phát" tabindex="0">
+              <div class="slides">
+                <img class="slide is-active" src="assets/Anh Xuong/Ảnh nhà máy .jpg" width="1920" height="1080" alt="Nhà máy bao bì Vinh Phát" fetchpriority="high">
+                <img class="slide" src="assets/Anh Xuong/Ảnh bên trong.png" width="1920" height="1080" alt="Không gian bên trong nhà xưởng Vinh Phát" aria-hidden="true">
+                <img class="slide" src="assets/Anh Xuong/Anh Nhan Vien Tu Van.png" width="1920" height="1080" alt="Nhân viên tư vấn Vinh Phát" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Số liệu doanh nghiệp; sửa trong data.js → hero.stats. -->
+        <div class="stats" aria-label="Vinh Phát qua những con số">
+          <div><strong>55<span>+</span></strong><span>KHÁCH HÀNG LỚN</span></div>
+          <div><strong>100K<span>+</span></strong><span>ĐƠN HÀNG</span></div>
+          <div><strong>5000</strong><span>HỘP MOQ</span></div>
+          <div><strong>5000</strong><span>M² DIỆN TÍCH NHÀ XƯỞNG</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="dich-vu" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker" hidden></p>
+          <h2 id="services-title">Dịch vụ của chúng tôi</h2>
+          <p>Các sản phẩm bao bì giấy và ấn phẩm phục vụ nhu cầu kinh doanh, học tập của bạn.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><span class="card-number" aria-hidden="true">01</span><div class="service-icon"><img src="assets/icons/carton.svg" width="28" height="28" alt=""></div><h3>Hộp Bồi Carton</h3><p>Hộp Bồi Carton giấy in theo thiết kế, phù hợp đóng gói sản phẩm và thể hiện hình ảnh thương hiệu.</p><a class="text-link" href="dich-vu.html#hop-carton-boi">Tìm hiểu thêm <span aria-hidden="true">&#8599;</span></a></article>
+          <article class="service-card"><span class="card-number" aria-hidden="true">02</span><div class="service-icon"><img src="assets/icons/paper-box.svg" width="28" height="28" alt=""></div><h3>Hộp giấy<br>ivory, duplex</h3><p>In Hộp Giấy Ivory, Duplex theo kích thước và mẫu thiết kế, đáp ứng nhu cầu bao bì cho nhiều sản phẩm.</p><a class="text-link" href="dich-vu.html#hop-giay-ivory-duplex">Tìm hiểu thêm <span aria-hidden="true">&#8599;</span></a></article>
+          <article class="service-card"><span class="card-number" aria-hidden="true">03</span><div class="service-icon"><img src="assets/icons/notebook.svg" width="28" height="28" alt=""></div><h3>Vở Học Sinh,<br>giấy thi</h3><p>In Vở Học Sinh và giấy thi theo mẫu, với nội dung, định lượng giấy và quy cách phù hợp nhu cầu sử dụng.</p><a class="text-link" href="dich-vu.html#vo-hoc-sinh-giay-thi">Tìm hiểu thêm <span aria-hidden="true">&#8599;</span></a></article>
+          <article class="service-card"><span class="card-number" aria-hidden="true">04</span><div class="service-icon"><img src="assets/icons/paper-bag.svg" width="28" height="28" alt=""></div><h3>Túi Giấy</h3><p>Túi Giấy in logo và thiết kế riêng, phù hợp đựng sản phẩm, quà tặng và quảng bá thương hiệu.</p><a class="text-link" href="dich-vu.html#tui-giay">Tìm hiểu thêm <span aria-hidden="true">&#8599;</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="gioi-thieu" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img src="assets/Anh Xuong/Anh Nhan Vien Tu Van.png" width="900" height="585" loading="lazy" alt="Đội ngũ tư vấn Vinh Phát">
+          <div class="experience"><p class="experience-label">KINH NGHIỆM</p><p class="experience-value"><strong>20+</strong> <span>Năm</span></p></div>
+        </div>
+        <div class="about-copy">
+          <p class="section-kicker" hidden></p>
+          <h2 id="about-title">Tại sao chọn <span>Vinh Phát</span><br>làm đối tác chiến lược?</h2>
+          <p class="about-intro" hidden></p>
+          <ol class="reason-list">
+            <li><span class="reason-number">01</span><div><h3>Giá cả cạnh tranh</h3><p>Cam kết mang lại giải pháp bao bì chất lượng với chi phí tối ưu nhất thị trường</p></div></li>
+            <li><span class="reason-number">02</span><div><h3>Sản phẩm chất lượng</h3><p>Giám sát chặt chẽ từng công đoạn bởi hệ thống quy trình chuẩn mực</p></div></li>
+            <li><span class="reason-number">03</span><div><h3>Dịch vụ tận tâm</h3><p>Đội ngũ chuyên gia giàu kinh nghiệm sẵn sàng hỗ trợ bạn 24/7</p></div></li>
+            <li><span class="reason-number">04</span><div><h3>Công nghệ hiện đại</h3><p>Hệ thống máy móc nhập khẩu 100% với công nghệ tự động hóa tiên tiến nhất</p></div></li>
+          </ol>
+          <a class="button button-wine" href="lien-he-va-bao-gia.html">Đăng ký tư vấn ngay <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section news" id="tin-tuc" aria-labelledby="news-title"><div class="container"><div class="section-heading news-heading"><div><p class="section-kicker">KINH NGHIỆM IN ẤN &amp; BAO BÌ</p><h2 id="news-title">Cẩm nang khách hàng</h2><p>Từ ý tưởng đến thành phẩm — cùng Vinh Phát chuẩn bị tốt hơn cho mỗi đơn hàng in.</p></div><span class="news-heading-note"><span class="news-note-item">Chọn đúng</span><span class="news-note-item">In đẹp</span><span class="news-note-item">Tối ưu chi phí</span></span></div><div class="news-grid"><article class="news-card"><div class="news-image"><img src="assets/Anh san pham/Hộp Giấy Ivory.jpg" width="640" height="400" alt="Mẫu hộp giấy Ivory của Vinh Phát" loading="lazy"><span>CHẤT LIỆU &amp; QUY CÁCH</span></div><div class="news-body"><p class="news-meta"><span class="news-step">01</span>Chọn bao bì <span>·</span> 3 phút đọc</p><h3>Chọn loại bao bì phù hợp với sản phẩm</h3><p>Hộp bồi carton, hộp Ivory hay túi giấy? Bắt đầu từ sản phẩm, cách sử dụng và hình ảnh thương hiệu.</p><button class="text-link" type="button" data-article="chon-bao-bi">Xem hướng dẫn<span aria-hidden="true">↗</span></button></div></article>
+<article class="news-card"><div class="news-image"><img src="assets/Anh san pham/Túi Giấy.jpg" width="640" height="400" alt="Túi giấy in thiết kế thương hiệu" loading="lazy"><span>THIẾT KẾ &amp; FILE IN</span></div><div class="news-body"><p class="news-meta"><span class="news-step">02</span>Chuẩn bị thiết kế <span>·</span> 3 phút đọc</p><h3>Cần chuẩn bị gì trước khi gửi thiết kế in?</h3><p>Một vài bước kiểm tra logo, nội dung và mẫu thiết kế giúp quá trình duyệt in thuận tiện hơn.</p><button class="text-link" type="button" data-article="chuan-bi-file-in">Xem hướng dẫn<span aria-hidden="true">↗</span></button></div></article>
+<article class="news-card"><div class="news-image"><img src="assets/Anh san pham/Hộp bồi sóng E.jpg" width="640" height="400" alt="Mẫu hộp bồi sóng E theo yêu cầu" loading="lazy"><span>BÁO GIÁ &amp; ĐẶT HÀNG</span></div><div class="news-body"><p class="news-meta"><span class="news-step">03</span>Lên kế hoạch đặt in <span>·</span> 2 phút đọc</p><h3>5 thông tin giúp nhận báo giá sát nhu cầu</h3><p>Chuẩn bị quy cách, số lượng và thời gian cần hàng để Vinh Phát tư vấn phương án in phù hợp.</p><button class="text-link" type="button" data-article="yeu-cau-bao-gia-in">Xem hướng dẫn<span aria-hidden="true">↗</span></button></div></article></div><div class="news-support"><div><h3>Bạn đã có ý tưởng cho bao bì của mình?</h3><p>Gửi mẫu hoặc kích thước sản phẩm. Vinh Phát tư vấn thiết kế và báo giá miễn phí.</p></div><a class="button button-wine" href="lien-he-va-bao-gia.html">Trao đổi nhu cầu in <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="section partners" aria-labelledby="partners-title">
+      <div class="container"><div class="section-heading centered"><p class="section-kicker" hidden></p><h2 id="partners-title">Đối tác &amp; Khách hàng</h2><p>NHỮNG THƯƠNG HIỆU ĐÃ VÀ ĐANG ĐỒNG HÀNH CÙNG VINH PHÁT</p></div><div class="partner-logos"><div class="partner-track"><div class="partner-group" role="list" aria-label="Partners"><div class="partner-logo" role="listitem"><img src="assets/logo/Agribank.png" width="220" height="145" alt="Agribank"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Bánh Khảo Bảo Hiên.png" width="220" height="145" alt="Bánh Khảo Bảo Hiên"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Bánh Đậu Xanh Thành Nam.png" width="220" height="145" alt="Bánh Đậu Xanh Thành Nam"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Bánh Đậu Xanh Đại Phú.png" width="220" height="145" alt="Bánh Đậu Xanh Đại Phú"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Bảo Hiểm Xã Hội Thành Phố Hải Phòng.png" width="220" height="145" alt="Bảo Hiểm Xã Hội Thành Phố Hải Phòng"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Bệnh Viện Nhi Hải Dương.jpg" width="220" height="145" alt="Bệnh Viện Nhi Hải Dương"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Bệnh Viện Phổi Hải Dương.jpg" width="220" height="145" alt="Bệnh Viện Phổi Hải Dương"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Bệnh Viện VPMed.png" width="220" height="145" alt="Bệnh Viện VPMed"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Cám Haid.jpg" width="220" height="145" alt="Cám Haid"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Gốm Chu Đậu.png" width="220" height="145" alt="Gốm Chu Đậu"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Ha Hae Vietnam.jpg" width="220" height="145" alt="Ha Hae Vietnam"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Khẩu Trang Ami.png" width="220" height="145" alt="Khẩu Trang Ami"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Khẩu Trang Cường Thịnh.png" width="220" height="145" alt="Khẩu Trang Cường Thịnh"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Khẩu Trang Duy Ngọc.png" width="220" height="145" alt="Khẩu Trang Duy Ngọc"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Khẩu Trang Gumi.png" width="220" height="145" alt="Khẩu Trang Gumi"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Khẩu Trang Juli.png" width="220" height="145" alt="Khẩu Trang Juli"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Khẩu Trang TopGia.png" width="220" height="145" alt="Khẩu Trang TopGia"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Sở Giáo Dục Thành Phố Hải Phòng.jpeg" width="220" height="145" alt="Sở Giáo Dục Thành Phố Hải Phòng"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Sở Giáo Dục Tỉnh Sơn La.png" width="220" height="145" alt="Sở Giáo Dục Tỉnh Sơn La"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Sở Lao Động Thương Binh Và Xã Hội Tỉnh Hải Dương.png" width="220" height="145" alt="Sở Lao Động Thương Binh Và Xã Hội Tỉnh Hải Dương"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Trường Quân Sự Quân Khu 3.jpg" width="220" height="145" alt="Trường Quân Sự Quân Khu 3"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Tòa án Nhân dân Tối Cao Tỉnh Hải Dương.jpg" width="220" height="145" alt="Tòa án Nhân dân Tối Cao Tỉnh Hải Dương"></div><div class="partner-logo" role="listitem"><img src="assets/logo/Vietinbank.png" width="220" height="145" alt="Vietinbank"></div></div><div class="partner-group" aria-hidden="true"><div class="partner-logo" ><img src="assets/logo/Agribank.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Bánh Khảo Bảo Hiên.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Bánh Đậu Xanh Thành Nam.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Bánh Đậu Xanh Đại Phú.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Bảo Hiểm Xã Hội Thành Phố Hải Phòng.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Bệnh Viện Nhi Hải Dương.jpg" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Bệnh Viện Phổi Hải Dương.jpg" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Bệnh Viện VPMed.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Cám Haid.jpg" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Gốm Chu Đậu.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Ha Hae Vietnam.jpg" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Khẩu Trang Ami.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Khẩu Trang Cường Thịnh.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Khẩu Trang Duy Ngọc.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Khẩu Trang Gumi.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Khẩu Trang Juli.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Khẩu Trang TopGia.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Sở Giáo Dục Thành Phố Hải Phòng.jpeg" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Sở Giáo Dục Tỉnh Sơn La.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Sở Lao Động Thương Binh Và Xã Hội Tỉnh Hải Dương.png" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Trường Quân Sự Quân Khu 3.jpg" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Tòa án Nhân dân Tối Cao Tỉnh Hải Dương.jpg" width="220" height="145" alt=""></div><div class="partner-logo" ><img src="assets/logo/Vietinbank.png" width="220" height="145" alt=""></div></div></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="lien-he" aria-labelledby="contact-title">
+      <div class="container contact-banner"><div><h2 id="contact-title">Sẵn sàng tối ưu chi phí nhập hàng?</h2><p>Trải nghiệm hệ thống đặt hàng thông minh và dịch vụ vận chuyển chính ngạch chuyên nghiệp ngay hôm nay.</p></div><div class="contact-actions"><a class="button button-wine" href="bang-gia.html">XEM BẢNG GIÁ VIP</a></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about"><a href="#dau-trang"><img src="assets/LOGO VINH PHÁT.png" width="230" height="90" loading="lazy" alt="Vinh Phát Design &amp; Print"></a><p class="footer-company-name">CÔNG TY TNHH SẢN XUẤT VÀ DỊCH VỤ IN VINH PHÁT.</p><p class="footer-address">Cụm công nghiệp Thạch Khôi, Phường Thạch Khôi, Thành phố Hải Phòng</p><div class="footer-socials" aria-label="Mạng xã hội"><button class="footer-social-button" type="button" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14.2 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.7 1.8-1.7h1.9V2.5a25 25 0 0 0-2.8-.2c-2.8 0-4.7 1.7-4.7 4.8v2.4H7.3V13h3.1v9z"/></svg></button><button class="footer-social-button" type="button" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path fill-rule="evenodd" d="M22.5 7.3a3 3 0 0 0-2.1-2.1C18.5 4.7 12 4.7 12 4.7s-6.5 0-8.4.5a3 3 0 0 0-2.1 2.1A30 30 0 0 0 1 12a30 30 0 0 0 .5 4.7 3 3 0 0 0 2.1 2.1c1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5a3 3 0 0 0 2.1-2.1A30 30 0 0 0 23 12a30 30 0 0 0-.5-4.7ZM10 15.5v-7l6 3.5z"/></svg></button><button class="footer-social-button" type="button" aria-label="Chat" title="Chat"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.3 1.2 4.4 3.2 5.9L4 21l5-2.3c1 .2 2 .3 3 .3 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg></button></div></div>
+        <div><h2>THÔNG TIN &amp; CHÍNH SÁCH</h2><a href="chinh-sach-quy-dinh.html#bao-mat">Chính sách bảo mật</a><a href="chinh-sach-quy-dinh.html#dieu-khoan-su-dung">Điều khoản sử dụng</a><a href="bang-gia.html">Bảng giá tham khảo</a><a href="dich-vu.html">Hướng dẫn đặt hàng</a></div>
+        <div><h2>SẢN PHẨM</h2><a href="dich-vu.html#hop-carton-boi">Hộp Bồi Carton</a><a href="dich-vu.html#hop-giay-ivory-duplex">Hộp Giấy Ivory, Duplex</a><a href="dich-vu.html#vo-hoc-sinh-giay-thi">Vở Học Sinh, Giấy Thi</a><a href="dich-vu.html#tui-giay">Túi Giấy</a></div>
+        <div class="footer-contact"><h2>LIÊN HỆ HỖ TRỢ</h2><a href="tel:0846901111"><span aria-hidden="true">&#x260E;</span> 084.690.1111</a><a href="mailto:invinhphat6886@gmail.com"><span aria-hidden="true">&#x2709;</span> invinhphat6886@gmail.com</a><p><span class="status-dot"></span> Hỗ trợ 24/7</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="copyright-year">2026</span> Vinh Phát.</p><a href="#dau-trang">Về đầu trang &#8593;</a></div>
+    </div>
+  </footer>
+
+  <a class="floating-contact" href="tel:0846901111" aria-label="Gọi tư vấn: 084.690.1111"><span aria-hidden="true">☎</span></a>
+  <button class="back-top" type="button" aria-label="Về đầu trang" hidden>↑</button>
+  <dialog class="article-dialog" aria-labelledby="article-title"><button class="dialog-close" type="button" aria-label="Đóng cẩm nang">×</button><p class="section-kicker">CẨM NANG KHÁCH HÀNG</p><h2 id="article-title"></h2><div id="article-content"></div><a class="button button-wine" href="mailto:invinhphat6886@gmail.com">Trao đổi với Vinh Phát <span aria-hidden="true">↗</span></a></dialog>
+</body>
+</html>
